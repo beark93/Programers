@@ -1,4 +1,3 @@
 function solution(arr) {
-    const sum = arr.reduce((a,b) => a+b)
-    return sum / arr.length
+    return arr.reduce((a, b) => a + b / arr.length, 0)
 }
