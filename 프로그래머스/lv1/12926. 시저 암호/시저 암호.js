@@ -16,6 +16,7 @@ function solution(s, n) {
 //     }).join('')
     
     // 다른사람 풀이 참고
+    // 알파벳을 순서대로 2번 반복해서 나열한 문자열을 통해 z 이상일 때 다시 a 로 돌아가도록 구현
     const alphabet = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
     return s.split('').map(c => c === ' ' ? ' ' : alphabet.charAt(alphabet.indexOf(c) + n)).join('')
